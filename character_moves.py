@@ -9,13 +9,14 @@ grass = load_image('grass.png')
 def move_top():
     print("Moving top")
     for x in range(50, 750, 5):
-        draw_boy(x, 90)
-
+        draw_boy(x, 550)
     pass
 
 
 def move_right():
     print("Moving right")
+    for y in range(550, 90, -5):
+        draw_boy(750, y)
     pass
 
 
@@ -34,8 +35,8 @@ def move_left():
 def move_rectangle():
     print("Moving rectangle")
 
-    # move_top()
-    # move_right()
+    move_top()
+    move_right()
     move_bottom()
     move_left()
 
