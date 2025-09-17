@@ -5,8 +5,31 @@ open_canvas()
 boy = load_image('character.png')
 grass = load_image('grass.png')
 
+
+def move_right():
+    pass
+
+
+def move_top():
+    pass
+
+
+def move_left():
+    pass
+
+
+def move_bottom():
+    pass
+
+
 def move_rectangle():
     print("Moving rectangle")
+
+    move_right()
+    move_top()
+    move_left()
+    move_bottom()
+
     pass
 
 
