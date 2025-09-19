@@ -93,6 +93,9 @@ def move_right_edge():
 
 def move_bottom_edge():
     print("Moving bottom edge")
+    for x in range(650, 150, -5):
+        draw_boy(x, 90)
+        delay(0.01)
 
 
 def move_triangle():
