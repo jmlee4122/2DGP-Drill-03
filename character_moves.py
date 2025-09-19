@@ -67,7 +67,7 @@ def move_left_edge():
     x = 150
     y = 90
     end_x = x + 500 * math.cos(math.radians(60))
-    end_y = y + 90 + 500 * math.sin(math.radians(60))
+    end_y = y + 500 * math.sin(math.radians(60))
 
     while x <= end_x and y <= end_y:
         draw_boy(x, y)
@@ -78,6 +78,17 @@ def move_left_edge():
 
 def move_right_edge():
     print("Moving right edge")
+    x = 150 + 500 * math.cos(math.radians(60))
+    y = 90 + 500 * math.sin(math.radians(60))
+    end_x = x + 500 * math.cos(math.radians(60))
+    end_y = y - 500 * math.sin(math.radians(60))
+
+    while x <= end_x and y >= end_y:
+        draw_boy(x, y)
+        x += 5
+        y -= 5 * math.tan(math.radians(60))
+        delay(0.01)
+
 
 
 def move_bottom_edge():
