@@ -58,6 +58,7 @@ def move_circle():
 
 def draw_boy(x: float, y: float):
     clear_canvas_now()
+    grass.draw_now(400, 30)
     boy.draw_now(x, y)
     delay(0.01)
 
