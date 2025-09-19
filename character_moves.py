@@ -113,5 +113,3 @@ while True:
     move_triangle()
     move_circle()
     pass
-
-close_canvas()
